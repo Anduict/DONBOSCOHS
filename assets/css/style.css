@@ -2303,3 +2303,123 @@ body {
   }
   
 }
+/* =========================================
+   MOBILE RESPONSIVE FIXES
+   Don Bosco Catholic Secondary School-Dilla
+========================================= */
+
+/* Prevent accidental horizontal overflow */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Page heading adjustments */
+@media (max-width: 767px) {
+
+    .page-heading .overlay {
+        padding: 120px 20px 40px;
+    }
+
+    .page-heading h2 {
+        font-size: 26px;
+    }
+
+    .sub-pages {
+        min-width: 0;
+        margin: 0 10px;
+    }
+
+    section {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    /* Header */
+    .header-area {
+        height: 80px;
+    }
+
+    .header-area .main-nav .logo {
+        line-height: 80px;
+        max-width: 75%;
+        font-size: 22px;
+    }
+
+    .header-area .main-nav .menu-trigger {
+        right: 15px;
+    }
+
+    /* Homepage hero */
+    .swiper-container {
+        height: 75vh;
+        min-height: 450px;
+    }
+
+    .slide-inner .header-text {
+        width: 90%;
+        left: 5%;
+        margin: 0;
+    }
+
+    .slide-inner .header-text h2 {
+        font-size: 28px;
+        line-height: 1.4;
+        margin-top: 50px;
+    }
+
+    /* Buttons */
+    .buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Image overflow sections */
+    .img-overflow-left .col-6 img,
+    .img-overflow-right .col-6 img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Content cards */
+    .card {
+        margin-bottom: 15px;
+    }
+
+    /* Tables */
+    div.scrollmenu {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Footer */
+    footer .overlay {
+        padding: 20px 15px;
+    }
+
+    footer ul.fo-address li {
+        margin: 20px 0;
+    }
+
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .page-heading .overlay {
+        padding: 140px 40px 50px;
+    }
+
+    .slide-inner .header-text {
+        width: 75%;
+    }
+
+}
